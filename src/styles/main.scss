@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*
+ * Skip to Content Button
+ */
+
+.skip-to-content {
+  position: absolute;
+  background-color: #bf1722;
+  text-decoration: none;
+  top: -5rem;
+  cursor: pointer;
+}
+
+.skip-to-content:focus {
+  display: block;
+  outline: none;
+  top: 1rem;
+}
+
+/*
+ * Header
+ */
+
+header {
+  background-image: linear-gradient(to right top, #8b7e74, #9b8d7f, #aa9c8a, #b9ac95, #c7bca1);
+  min-height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 a {
+  text-decoration: none;
+  text-shadow: 5px 1px black;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+
+header h1 span {
+  color: gold;
+}
+
+/*
+ *  Navigation Bar
+ */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar a:hover {
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.navbar a {
+  padding: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+/*
+ * Menu Hamburger Button
+ */
+
+.menu {
+  background-image: linear-gradient(to right top, #8b7e74, #9b8d7f, #aa9c8a, #b9ac95, #c7bca1);
+  color: #ffffff;
+  display: none;
+  font-size: 32px;
+  padding: 20px;
+  outline: none;
+  border: none;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.menu:focus {
+  border: 1px solid #ffff;
+}
+
+/*
+ * Jumbotron Banner
+ */
+
+.banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  max-height: 650px;
+  text-align: center;
+}
+
+.banner-content {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 5px 1px black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.banner-content span {
+  color: gold;
+}
+
+.banner picture,
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.banner h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-size: 60px;
+  font-weight: 800;
+  color: #da272d;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+section {
+  width: 100%;
+  min-height: 200px;
+}
+
+/*
+ * Explore Resto
+ */
+
+.explore__container {
+  background-image: linear-gradient(to right top, #8b7e74, #9b8d7f, #aa9c8a, #b9ac95, #c7bca1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 2em;
+  margin: 1.5em;
+  border-radius: 0.5em;
+  text-shadow: 5px 1px black;
+}
+
+.explore {
+  width: 100%;
+  text-align: center;
+  display: grid;
+}
+.explore p {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+.explore p span {
+  color: gold;
+}
+
+/*
+ * Restaurant List & Detail 
+ */
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #8d7b68;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.restaurant-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.restaurant-container h3 {
+  text-align: center;
+  color: #bf1722;
+}
+
+.card-content {
+  font-family: 'Poppins', sans-serif;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-container-favorite {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.restaurant-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.restaurant-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.restaurant-head {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  background-color: #a4907c;
+  color: #ffd93d;
+}
+
+.city {
+  padding: 5px;
+  top: 10px;
+  color: #333;
+  justify-content: center;
+}
+
+.card-link-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.card-link-button:hover {
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.card-rating {
+  margin-top: 10px;
+}
+
+/*
+ * Favorite Button
+ */
+
+.favorite {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+/*
+ * Footer
+ */
+
+footer {
+  padding: 30px;
+  color: #fff;
+  font-weight: bold;
+  background-image: linear-gradient(to right top, #8b7e74, #9b8d7f, #aa9c8a, #b9ac95, #c7bca1);
+  text-align: center;
+}
+
+/*
+ * Icon Social Media Footer
+ */
+
+.icons {
+  display: flex;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  bottom: 15px;
+  transform: translate(-10%, -10%);
+  justify-content: center;
+}
+
+.icons a {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  line-height: 60px;
+  margin: 0 15px;
+  border-radius: 50%;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease;
+}
+
+.icons a:hover {
+  color: white;
+  transform: translate(0, -30px);
+  box-shadow: 0 20px 8px rgba(0, 0, 0, 0.7);
+}
+
+.icons a:nth-child(1):hover {
+  background-color: #2c3e50;
+}
+
+.icons a:nth-child(2):hover {
+  background-color: #3498db;
+}
+
+.icons a:nth-child(3):hover {
+  background-image: linear-gradient(to right top, #d65db1, #ff6e91, #ff9671, #ffc75f, #f9f871);
+}

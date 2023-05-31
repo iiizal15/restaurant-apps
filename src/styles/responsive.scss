@@ -1,0 +1,79 @@
+@media (max-width: 62.5em) {
+  .detail-text h1 {
+    font-size: 24px;
+  }
+
+  .detail-text h3 {
+    font-size: 25px;
+  }
+
+  .detail-text h4 {
+    font-size: 24px;
+  }
+
+  .card-container-favorite {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 47em) {
+  .menu {
+    display: block;
+    z-index: 100;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 50%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    flex-direction: column;
+    transform: translateX(100%);
+    background-image: linear-gradient(to right top, #8b7e74, #9b8d7f, #aa9c8a, #b9ac95, #c7bca1);
+    z-index: 50;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  .menus {
+    flex-direction: column;
+  }
+
+  .menus div {
+    margin-bottom: 1rem;
+  }
+
+  .card-container-favorite {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 30em) {
+  .container h1 a {
+    font-size: 32px;
+  }
+
+  .detail-text h1 {
+    font-size: 20px;
+  }
+
+  .detail-text h3 {
+    font-size: 16px;
+  }
+
+  .detail-text h4 {
+    font-size: 16px;
+  }
+
+  .card-container-favorite {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
